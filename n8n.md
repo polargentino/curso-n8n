@@ -254,4 +254,4 @@ Seleccioná Ejecutar flujo de trabajo. n8n ejecutará el flujo completo.
 
 El flujo de trabajo completo debería verse así:
 
-![n8n-4.png](home/pol/Escritorio/n8n/assets/n8n-4.png)
+![n8n-4](assets/n8n-4.png)
