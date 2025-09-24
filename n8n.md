@@ -1,4 +1,4 @@
-# Bienvenido a n8n Docs 
+# 1 - Bienvenido a n8n Docs 
 ## Editado y sudido a GitHub por Pablo Matías Monsalvo el 24/09/2025
 
 Esta es la documentación de **n8n**, una herramienta de automatización de flujo de trabajo con licencia de código justo que combina capacidades de IA con automatización de procesos comerciales.
@@ -41,7 +41,7 @@ n8n admite la creación de funciones y herramientas de inteligencia artificial.
 
 ----------
 
-# Ruta de aprendizaje
+# 2- Ruta de aprendizaje
 
 Esta guía describe una serie de tutoriales y recursos diseñados para ayudarle a comenzar a utilizar **n8n**.
 
@@ -119,7 +119,7 @@ Si no encuentras un nodo para una aplicación o servicio específico, puedes cre
 
 -----------
 
-# Elige tu n8n
+# 3- Elige tu n8n
 
 Esta sección contiene información sobre la gama de plataformas, planes de precios y licencias de **n8n**.
 
@@ -177,3 +177,6 @@ n8n tiene dos versiones de pago:
 - **Autohospedado**: existen versiones tanto gratuitas como de pago.
 
 Para conocer detalles de los planes de nube y datos de contacto para Enterprise Self-hosted, consulte *Precios* en el sitio web de n8n.
+
+------------
+
