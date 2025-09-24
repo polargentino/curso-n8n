@@ -1,4 +1,5 @@
-# Bienvenido a n8n Docs
+# Bienvenido a n8n Docs 
+## Editado y sudido a GitHub por Pablo Matías Monsalvo el 24/09/2025
 
 Esta es la documentación de **n8n**, una herramienta de automatización de flujo de trabajo con licencia de código justo que combina capacidades de IA con automatización de procesos comerciales.
 
@@ -8,29 +9,25 @@ Abarca todo, desde la configuración hasta el uso y el desarrollo. Es un proyect
 
 ## Por dónde empezar
 
-### 🏁 Guías de inicio rápido
+### Guías de inicio rápido
 
 Empiece a utilizar las guías de inicio rápido de n8n.
 
-![Guía de inicio rápido](assets/guia-inicio-rapido.png)
-
-### 🚀 Pruébalo
+### Pruébalo
 
 Elige el n8n adecuado para ti: nube, npm, autohospedaje...
 
-![Opciones de instalación](assets/opciones-instalacion.png)
+### Opciones
 
-### 🔌 Explorar integraciones
+Explorar integraciones
 
 Explora la biblioteca de integraciones de n8n.
 
-![Integraciones](assets/integraciones.png)
+Encuentra tus aplicaciones
 
-### 🧠 Desarrollar funcionalidades de IA
+### Desarrollar funcionalidades de IA
 
 n8n admite la creación de funciones y herramientas de inteligencia artificial.
-
-![IA avanzada](assets/ia-avanzada.png)
 
 ---
 
@@ -42,4 +39,3 @@ n8n admite la creación de funciones y herramientas de inteligencia artificial.
 - **Conveniente**: use npm o Docker para probar n8n, o la opción de alojamiento en la nube si desea que nos encarguemos de la infraestructura.
 - **Centrado en la privacidad**: hospedaje propio de n8n para privacidad y seguridad.
 
-![Acerca de n8n](assets/n8n-1.png)
