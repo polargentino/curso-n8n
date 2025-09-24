@@ -1,5 +1,5 @@
 # 1 - Bienvenido a n8n Docs 
-## Editado y sudido a GitHub por Pablo Matías Monsalvo el 24/09/2025
+## Editado y subido a GitHub por Pablo Matías Monsalvo el 24/09/2025
 
 Esta es la documentación de **n8n**, una herramienta de automatización de flujo de trabajo con licencia de código justo que combina capacidades de IA con automatización de procesos comerciales.
 
