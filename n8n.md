@@ -187,3 +187,63 @@ La mejor manera de aprender **n8n** es usar nuestros tutoriales para familiariza
 - ¿Buscas una introducción rápida? Consulta el tutorial **"Primer flujo de trabajo"**.
 - ¿Te interesa saber qué puedes hacer con la IA? Descubre cómo **crear un agente de chat con IA con n8n**.
 - ¿Preferís trabajar con ejemplos extensos? Quizás estos **cursos** sean para vos.
+
+----------
+
+# 5- El inicio rápido muy rápido
+
+Esta guía de inicio rápido te ayuda a empezar a usar **n8n** lo antes posible. Te permite probar la interfaz de usuario e introduce dos funciones clave: **plantillas de flujo de trabajo** y **expresiones**. No incluye explicaciones detalladas ni profundiza en los conceptos.
+
+---
+
+## En este tutorial, aprenderás lo siguiente:
+
+- Cargar un flujo de trabajo desde la biblioteca de plantillas de flujo de trabajo
+- Agregar un nodo y configurarlo usando expresiones
+- Ejecutar tu primer flujo de trabajo
+
+---
+
+## Paso uno: Abrir una plantilla de flujo de trabajo y registrarse en n8n Cloud
+
+n8n proporciona una plantilla de inicio rápido que utiliza nodos de entrenamiento. Puede usarse para trabajar con datos falsos y evitar la configuración de credenciales.
+
+Esta guía utiliza **n8n Cloud**. Hay una prueba gratuita disponible para nuevos usuarios.
+
+1. Ir a **Plantillas | Inicio rápido muy rápido**
+2. Seleccionar **Usar gratis** para ver las opciones de uso de la plantilla
+3. Seleccionar **Comenzar gratis con n8n Cloud** para registrarse en una nueva instancia
+
+Este flujo de trabajo:
+
+- Obtiene datos de ejemplo del nodo **Almacén de datos del cliente**
+- Utiliza el nodo **Editar campos** para extraer únicamente los datos deseados y asignarlos a variables (nombre, ID y descripción del cliente)
+
+Las partes individuales de un flujo de trabajo n8n se denominan **nodos**. Hacé doble clic en un nodo para explorar su configuración y cómo procesa los datos.
+
+---
+
+## Paso dos: Ejecutar el flujo de trabajo
+
+Seleccioná **Ejecutar flujo de trabajo**. Esto ejecuta el flujo, cargando los datos del nodo **Almacén de datos del cliente** y luego transformándolos con **Editar campos**. Necesitás estos datos disponibles para trabajar con ellos en el siguiente paso.
+
+---
+
+## Paso tres: Agregar un nodo
+
+Añadí un tercer nodo para enviar mensajes a cada cliente y compartir su descripción. Usá el nodo **Customer Messenger** para enviar mensajes a destinatarios falsos.
+
+1. Seleccioná el icono de agregar nodo conector en el nodo **Editar campos**
+2. Buscá **Customer Messenger**. n8n mostrará una lista de nodos coincidentes
+3. Seleccioná **Customer Messenger (capacitación n8n)** para agregarlo al lienzo. n8n abrirá el nodo automáticamente
+
+### Usar expresiones para mapear el ID del cliente y crear el mensaje
+
+- En el panel **ENTRADA**, seleccioná la pestaña **Esquema**
+- Arrastrá `Editar Campos1 > customer_id` al campo **ID de cliente** en la configuración del nodo
+- Pasá el cursor sobre **Mensaje**, seleccioná la pestaña **Expresión** y luego el botón expandir para abrir el editor completo
+
+Copia esta expresión en el editor:
+
+```text
+Hi {{ $json.customer_name }}. Your description is: {{ $json.customer_description }}
