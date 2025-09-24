@@ -180,3 +180,10 @@ Para conocer detalles de los planes de nube y datos de contacto para Enterprise 
 
 ------------
 
+# 4- Pruébalo
+
+La mejor manera de aprender **n8n** es usar nuestros tutoriales para familiarizarse con la interfaz de usuario y los diferentes tipos de nodos e integraciones disponibles. Aquí tienes una selección de material para empezar:
+
+- ¿Buscas una introducción rápida? Consulta el tutorial **"Primer flujo de trabajo"**.
+- ¿Te interesa saber qué puedes hacer con la IA? Descubre cómo **crear un agente de chat con IA con n8n**.
+- ¿Preferís trabajar con ejemplos extensos? Quizás estos **cursos** sean para vos.
