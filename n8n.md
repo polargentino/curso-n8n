@@ -247,3 +247,9 @@ Copia esta expresión en el editor:
 
 ```text
 Hi {{ $json.customer_name }}. Your description is: {{ $json.customer_description }}
+
+Cerrá el editor de expresiones y luego el nodo Customer Messenger haciendo clic fuera del nodo o seleccionando Volver al lienzo.
+
+Seleccioná Ejecutar flujo de trabajo. n8n ejecutará el flujo completo.
+
+El flujo de trabajo completo debería verse así: ![n8n-4.png](assets/n8n-4.png)
