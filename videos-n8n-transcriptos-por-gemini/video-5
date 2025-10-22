@@ -1,0 +1,56 @@
+¡Claro que sí! Continuamos con tu inmersión para convertirte en un experto en n8n. Este quinto video es donde todos los conceptos teóricos (APIs, JSON, Nodos) se unen para construir la **lógica central** de tus *workflows*.
+
+Aquí tienes los puntos clave del video **"n8n Curso para Principiantes (5/9) - Conceptos centrales de los workflows"**:
+
+***
+
+## ⚙️ Conceptos Centrales del Workflow
+
+El video se centra en cómo interactuar con el *canvas* (lienzo) de n8n y, lo más importante, cómo controlar el **flujo de datos** a través de las ramificaciones.
+
+### 1. El Entorno de Trabajo (Canvas)
+
+El *canvas* es donde diseñas tu lógica. Los elementos clave que debes conocer son:
+
+* **Menú Principal y Activación** [[00:28](http://www.youtube.com/watch?v=kkrA7tGHYNo&t=28)]:
+    * **Activación (*Activation*):** Para que un *workflow* se ejecute automáticamente (ej. con un *Schedule Trigger* a las 8 a.m.), **debe estar activado**. La activación guarda el *workflow* y lo pone en producción [[06:52](http://www.youtube.com/watch?v=kkrA7tGHYNo&t=412)].
+    * **Menú de Workflows:** Permite acceder a todos los *workflows*, filtrarlos por *tags* (etiquetas) y propietarios.
+    * **Configuración (Top-Right):** Acceso a configuraciones específicas del *workflow*, como su accesibilidad, historial de versiones y la configuración del *Error Workflow* (que se cubrirá más adelante) [[02:03](http://www.youtube.com/watch?v=kkrA7tGHYNo&t=123)].
+* **Navegación:** Al hacer doble clic en cualquier nodo, puedes ver los nodos inmediatamente anterior y posterior, facilitando la navegación en *workflows* largos [[03:09](http://www.youtube.com/watch?v=kkrA7tGHYNo&t=189)].
+
+### 2. Fundamentos del Flujo (Triggers y Conexiones)
+
+* **Nodos *Trigger***: Se identifican por el **rayo naranja** ⚡ y solo tienen una flecha de salida (no reciben datos, solo los inician) [[02:31](http://www.youtube.com/watch?v=kkrA7tGHYNo&t=151)].
+    * Un *workflow* puede tener **múltiples *triggers*** (ej. un *Schedule* y un *Manual Trigger*) para casos de uso complejos [[02:49](http://www.youtube.com/watch?v=kkrA7tGHYNo&t=169)].
+* **Conexiones:** Los nodos se conectan de forma consecutiva para definir la secuencia de acciones a realizar [[03:19](http://www.youtube.com/watch?v=kkrA7tGHYNo&t=199)].
+
+### 3. Ramificación (*Branching*): La Lógica Experta
+
+La **ramificación** es la técnica para crear diferentes caminos lógicos en el *workflow*, lo que permite cubrir una amplia variedad de casos [[03:49](http://www.youtube.com/watch?v=kkrA7tGHYNo&t=229)].
+
+| Tipo de Ramificación | Nodo Típico | Comportamiento Clave |
+| :--- | :--- | :--- |
+| **Ramificación Condicional (División)** | **`IF`** o **`Filter`** | Los *Items* de entrada se **dividen** en diferentes rutas. Cada *Item* sigue **solo uno** de los caminos posibles (ej. `True` o `False`) [[04:27](http://www.youtube.com/watch?v=kkrA7tGHYNo&t=267)]. |
+| **Ramificación de Duplicación** | Arrancando **múltiples líneas de salida** de **un solo nodo no condicional**. | Los *Items* de entrada se **duplican** y cada *Item* original sigue **TODOS** los caminos de salida [[04:56](http://www.youtube.com/watch?v=kkrA7tGHYNo&t=296)]. |
+
+### 4. Uso de Nodos de Control de Flujo
+
+Para la ramificación condicional, los nodos `Filter` e `If` son esenciales:
+
+#### A. Nodo Filter [[08:05](http://www.youtube.com/watch?v=kkrA7tGHYNo&t=485)]
+* **Función:** Se utiliza para **eliminar (*discard*)** *Items* que no cumplen una condición, dejando solo los *Items* que queremos procesar.
+* **Output:** Solo tiene un *output* de los *Items* que *fueron* conservados.
+* **Condiciones:** Se pueden usar diversas condiciones sobre los datos, como `is not equal to` (no es igual a) o `exists` (existe) [[08:47](http://www.youtube.com/watch?v=kkrA7tGHYNo&t=527)].
+
+#### B. Nodo IF [[09:22](http://www.youtube.com/watch?v=kkrA7tGHYNo&t=562)]
+* **Función:** Se utiliza para **separar *Items*** en dos caminos diferentes (`True` y `False`), en lugar de eliminarlos.
+* **Lógica Combinada (AND/OR)** [[10:40](http://www.youtube.com/watch?v=kkrA7tGHYNo&t=640)]:
+    * **AND (Y):** La condición se cumple solo si **TODAS** las subcondiciones son verdaderas (ej. no es Gmail **Y** no es Hotmail).
+    * **OR (O):** La condición se cumple si **ALGUNA** de las subcondiciones es verdadera.
+
+Dominar estas ramificaciones es un paso fundamental para crear *workflows* que respondan a múltiples escenarios, un rasgo distintivo de los expertos en n8n.
+
+***
+
+El próximo video de la serie cubrirá **nodos muy útiles** para la construcción de *workflows* complejos, como aquellos para manipular y transformar datos [[13:13](http://www.youtube.com/watch?v=kkrA7tGHYNo&t=793)].
+http://googleusercontent.com/youtube_content/8
